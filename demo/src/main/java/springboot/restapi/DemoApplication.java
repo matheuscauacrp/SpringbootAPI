@@ -1,5 +1,7 @@
 package springboot.restapi;
 
+
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,7 +15,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @SpringBootApplication
 @EntityScan(basePackages = {"springboot.restapi.model"})
 @ComponentScan(basePackages = {"springboot.*"})
-@EnableJpaRepositories(basePackages = {"spingboot.restapi.repository"})
+@EnableJpaRepositories(basePackages = {"springboot.restapi.repository"})
 @EnableTransactionManagement
 @EnableWebMvc
 @RestController
@@ -22,6 +24,7 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
+		
 	}
 
 }
